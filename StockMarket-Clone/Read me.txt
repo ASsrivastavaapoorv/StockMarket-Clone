@@ -1,0 +1,4 @@
+  
+       2 ways:-
+   -> Kaise control kare space = jab ek side height of content zyada ho and ek side height of content kam ho = Line no 227
+   -> Bootstrap class=sticky-top do as same like above

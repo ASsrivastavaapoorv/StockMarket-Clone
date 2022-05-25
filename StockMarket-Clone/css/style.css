@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.navbar-brand img{
+     border-radius: 5px;
+     height: 34px;
+}
+.text{
+    margin-top: 2px;
+    color: #343434;
+    font-family: Lato,verdana,Arial,Tahoma;
+    font-weight: 700;
+    font-size: 2.2vw;
+    line-height: 35px;
+    text-shadow: 0 2px #fff, 0 3px #777;
+}
+
+/* ----------- */
+ #header .fa-sign-out{
+    font-size: 15px;
+ }
+#header .nav-link{
+    color: blue;
+}
+.user{
+    border: 1px solid black;
+    margin-top: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: -5px;
+    padding: 2px 16px 3px 5px;
+    background-color: #DED9c7;
+    height: 22px;
+}
+/* --------Horizontal Navbar----------------- */
+#banner .navbar{
+    background-color:midnightblue;
+    padding: 0px;  
+    height: 35px;
+}
+#banner .navbar-brand{
+    font-weight:bold;
+    font-size: 18px;
+    margin-left: 20px;
+    background-color: royalblue;
+    /* padding-bottom: 20px; */
+    height: 35px;
+}
+#banner .nav-link{
+    color: mintcream;
+    font-weight: bold;
+}
+
+
+/* ---------------Left Part----------------- */
+
+/* -----------Stocks ------- */
+
+#main .row{
+    margin-left: -11px;
+}
+.stocks .row{
+    margin-top: 20px;
+}
+#main a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;  
+}
+#main .fa-caret-up{
+     color:green;
+    font-size: 20px;
+}
+#main .fa-caret-down{
+    color:red;
+   font-size: 20px;
+}
+#main .no-up{
+    font-size: 13px;
+}
+#main .no-down{
+    font-size: 13px;
+}
+#main .up{
+    color: green;
+    font-size: 13px;
+}
+#main .down{
+    color:red;
+    font-size: 13px;
+}
+/* -----------Map Part------- */
+.map {
+    margin-left: 0px;
+}
+.map img{
+    margin-top: 15px;
+    height: 300px;
+    width: 754px;
+}
+/* ----------------News Part--------------- */
+#news .row{
+    margin-top: 18px;
+
+}
+.news-image img{
+    width: 103px;
+    height: 60px;
+    border-radius: 5px;
+}
+.news-text .span1{
+    color:#188fff;;
+    font-size: 14px;
+    font-weight: bold;
+}
+.news-text .span2{
+    font-size: 14px;
+}
+.news-text .news-h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    line-height: 0px;
+}
+.news-text .news-h5:hover{
+    color: #188fff;
+}
+.news-para a{
+    font-size: 14px;
+}
+#news a{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+#news .news-para{
+    margin-top: 13px;
+    max-width: 605px;
+    text-align: justify;
+}
+
+/*------------------------ Right Part Start ------------------------------------*/
+/* Text Part */
+.Page-Text h6{
+    color: #188fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 17px;
+}
+
+/*-- Table Part ---*/
+table, td, th {
+    border: 1px solid lightgrey;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    height: 10px;
+    width: 10px;
+    color: white;
+    background-color: #343A40;
+    font-size: 13px;
+  }
+  td{
+    height: 10px;
+    width: 61px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+.color1{
+    color: #188fff;
+}
+.color2{
+    color:#04AA6D;
+}
+  
+
+
+  .slider {
+    -webkit-appearance: none;
+    width: 35%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 4px;
+    height: 10px;
+    background: grey;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  
+
+  /*--------------------------Footer Part--------------------- */
+  .footer-section {
+    background-color:#103258;
+  }
+  .footer-section p{
+      color: white;
+      margin-top: 10px;
+  }
+  /* -------------------------------------------------------------------- */
+
+/* Kaise control kare space = jab ek side height of content zyada ho and ek side height of content kam ho */
+.control{
+    position: sticky;
+    top: 0;
+}
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

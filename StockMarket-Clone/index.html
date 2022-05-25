@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+</html>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/download.jfif"></a>
+            <a class="navbar-brand" href="#">
+                <h4 class="text">FinAnalytics</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <form class="form-inline mx-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <h6 class="user">user1</h6>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!------------------------------- Horizontal Navbar ------------------------------------->
+    <div id="banner">
+
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">General Screener</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stock Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Group Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Watchlists</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Main Section -->
+    <div id="main">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!------------------------ Left Part Start ------------------------------------>
+                <div class="col-md-7 ">
+                    <!---- STocks ---->
+                    <div class="stocks">
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <a href="#">DOW<i class="fa fa-caret-up" aria-hidden="true"></i></a>
+                                <p class="no-up">35619.25 <br><span class="up">+17.27 (+0.05%)</span></p>
+                            </div>
+
+                            <div class="col-md-3 ">
+                                <a href="#">S&P 500<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <p class="no-down">35619.25 <br><span class="down">-17.27 (+0.05%)</span></p>
+                            </div>
+
+                            <div class="col-md-3 ">
+                                <a href="#">NASDAQ<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <p class="no-down">35619.25 <br><span class="down">-17.27 (+0.05%)</span></p>
+                            </div>
+
+                            <div class="col-md-3 ">
+                                <a href="#">Russell 2000<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <p class="no-down">35619.25 <br><span class="down">-17.27 (+0.05%)</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Map part -->
+                        <div class="map">
+                            <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                        </div>
+                    </div>
+
+                    <!--  News Part -->
+                    <div id="news">
+                        <div class="row ">
+                            <div class="col-md-2">
+                                <div class="news-image">
+                                    <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <div class="news-text">
+                                    <p><span class="span1">Pulse2 </span><span class="span2">• 2021-11-23
+                                            05:18:41</span></p>
+                                    <h5 class="news-h5">Longeveron (LGVN) Stock: Why The Price Surged</h5>
+                                </div>
+                                <div class="news-para">
+                                    <a href="#">The stock price of Longeveron Inc (NASDAQ: LGVN) increased by 181.16% in
+                                        the most
+                                        recent trading session. This is why it happened.</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- News part -->
+                        <div class="row ">
+                            <div class="col-md-2">
+                                <div class="news-image">
+                                    <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <div class="news-text">
+                                    <p><span class="span1">Pulse2 </span><span class="span2">• 2021-11-23
+                                            05:18:41</span></p>
+                                    <h5 class="news-h5">Longeveron (LGVN) Stock: Why The Price Surged</h5>
+                                </div>
+                                <div class="news-para">
+                                    <a href="#">The stock price of Longeveron Inc (NASDAQ: LGVN) increased by 181.16% in
+                                        the most
+                                        recent trading session. This is why it happened.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-md-2">
+                                <div class="news-image">
+                                    <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <div class="news-text">
+                                    <p><span class="span1">Pulse2 </span><span class="span2">• 2021-11-23
+                                            05:18:41</span></p>
+                                    <h5 class="news-h5">Longeveron (LGVN) Stock: Why The Price Surged</h5>
+                                </div>
+                                <div class="news-para">
+                                    <a href="#">The stock price of Longeveron Inc (NASDAQ: LGVN) increased by 181.16% in
+                                        the most
+                                        recent trading session. This is why it happened.</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row ">
+                            <div class="col-md-2">
+                                <div class="news-image">
+                                    <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <div class="news-text">
+                                    <p><span class="span1">Pulse2 </span><span class="span2">• 2021-11-23
+                                            05:18:41</span></p>
+                                    <h5 class="news-h5">Longeveron (LGVN) Stock: Why The Price Surged</h5>
+                                </div>
+                                <div class="news-para">
+                                    <a href="#">The stock price of Longeveron Inc (NASDAQ: LGVN) increased by 181.16% in
+                                        the most
+                                        recent trading session. This is why it happened.</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row ">
+                            <div class="col-md-2 ">
+                                <div class="news-image">
+                                    <img class="img-fluid" src="./images/austin-distel-DfjJMVhwH_8-unsplash.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10 ">
+                                <div class="news-text">
+                                    <p><span class="span1">Pulse2 </span><span class="span2">• 2021-11-23
+                                            05:18:41</span></p>
+                                    <h5 class="news-h5">Longeveron (LGVN) Stock: Why The Price Surged</h5>
+                                </div>
+                                <div class="news-para">
+                                    <a href="#">BEIJING, Nov. 26, 2021 /PRNewswire/ -- RLX Technology Inc. ("RLX" or the
+                                        "Company") (NYSE: RLX), a leading branded e-vapor company in China, today
+                                        announced that it will report its unaudited financial results for third quarter
+                                        ended September 30, 2021, before the U.S. markets open on Friday, December 3,
+                                        2021. The Company's management will host an earnings conference call at 7:00
+                                        A.M.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!------------------------ Left Part End ------------------------------------>
+
+
+                <!------------------------ Right Part Start ------------------------------------>
+                <div class="col-md-5">
+
+                        <!-- 2 ways (Read me) -->
+                    <!-- <div class="sticky-top"> -->
+                        <div class="control">
+
+                        <!-- Text part 1-->
+                        <div>
+                            <div class="Page-Text">
+                                <h6>Top Gainers >></h6>
+                            </div>
+                        </div>
+
+                        <!-- Table Part 1-->
+                        <div id="Table1">
+                            <table class="table-striped">
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Change</th>
+                                    <th>%Change</th>
+                                    <th>Volume</th>
+                                    <th>52 Week Range</th>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO</td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!-- Text part 2 -->
+                        <section>
+                            <div class="Page-Text">
+                                <h6>Top Loosers >></h6>
+                            </div>
+                        </section>
+
+                        <!-- Table Part 2 -->
+                        <section id="Table1">
+                            <table class="table-striped">
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Change</th>
+                                    <th>%Change</th>
+                                    <th>Volume</th>
+                                    <th>52 Week Range</th>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color1">GGO
+                                    </td>
+                                    <td>16.20</td>
+                                    <td>16.14</td>
+                                    <td class="color2">29354.55%</td>
+                                    <td>233</td>
+                                    <td>
+                                        <div style="font-size: 13px;">
+                                            9.70
+                                            <input class="slider" id="width" type="range" min="969.999999999999"
+                                                max="1689.99999999999">
+                                            16.90
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+
+                        <!-- Text part 3 -->
+                        <section>
+                        <div class="Page-Text">
+                            <h6>Most Actives >></h6>
+                        </div>
+                    </section>
+
+                        <!-- Table Part 3 -->
+                        <section id="Table1">
+                        <table class="table-striped">
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Price</th>
+                                <th>Change</th>
+                                <th>%Change</th>
+                                <th>Volume</th>
+                                <th>52 Week Range</th>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="color1">GGO
+                                </td>
+                                <td>16.20</td>
+                                <td>16.14</td>
+                                <td class="color2">29354.55%</td>
+                                <td>233</td>
+                                <td>
+                                    <div style="font-size: 13px;">
+                                        9.70
+                                        <input class="slider" id="width" type="range" min="969.999999999999"
+                                            max="1689.99999999999">
+                                        16.90
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </section> 
+                    </div>
+                </div>
+                <!------------------------ Right Part End ------------------------------------>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------------------------------- Footer Part ------------------------------------ -->
+    <div class="footer-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>© 2021 Plano Research Corporation. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
